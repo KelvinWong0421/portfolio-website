@@ -37,7 +37,7 @@ const Skills = (props: Props) => {
 
       <div className='grid grid-cols-4 gap-5'>
         {skillList.map(skill =>(
-          <Skill url={skill.url} percent={skill.percent} direction={skill.dir}/>
+          <Skill key={skill.id} url={skill.url} percent={skill.percent} direction={skill.dir}/>
         ))}
 
         
