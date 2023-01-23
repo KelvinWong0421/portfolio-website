@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import monkey from '../Image/monkey-technology.gif'
+import Image from 'next/image'
 
 
 type Props = {}
@@ -14,7 +15,7 @@ export default function About({}: Props) {
         About
       </h3>
 
-      <motion.img 
+      <motion.div 
         initial={{
           x:-200,
           opacity:0
@@ -25,10 +26,11 @@ export default function About({}: Props) {
 
         whileInView={{ x:0, opacity:1}}
         viewport={{once:true}}
-        src={monkey.src}
-        alt="My Image"
-        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
-      />
+        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-covenpmr md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+      >
+        <Image src={monkey} className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+        alt="My Image"/>
+      </motion.div>
 
       <div className='text-white leading-relaxed my-4 text-xl font-medium text-left md:px-10 '>
         <p className=' font-semibold'>
