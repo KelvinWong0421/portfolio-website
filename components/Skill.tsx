@@ -15,7 +15,7 @@ function Skill({direction,url,percent}: Props) {
 
         <motion.img 
         initial={{
-            x: direction ? 200:-200,
+            x: direction ? 100:-100,
             opacity:0,
         }}
         transition={{duration:1}}

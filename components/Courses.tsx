@@ -25,7 +25,7 @@ function Courses({}: Props) {
                 {courseList.map(course => (
                     <motion.li className='border-4 border-gray-700 rounded-2xl'
                         key={course.id}
-                        initial={{ opacity: 0, x: -200 }}
+                        initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{once:true}}
                         transition={{ duration: 1 }}
