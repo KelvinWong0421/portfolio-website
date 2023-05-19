@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import later from '../image/spongebob-later.gif'
+import openhub from '../image/openhub.png'
 
 type Props = {}
 
@@ -12,7 +12,7 @@ export default function Projects({}: Props) {
         Projects
       </h3>
       <Image className='relative mx-auto object-cover sm:w-64 sm:h-64 lg:h-auto lg:w-auto'
-        src={later} alt='Will Be back' width={800} height={800}/>
+        src={openhub} alt='Will Be back' width={400} height={400}/>
     </div>
   )
 }
