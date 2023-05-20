@@ -12,7 +12,7 @@ export default function Projects({}: Props) {
         Projects
       </h3>
       <Image className='relative mx-auto object-cover sm:w-64 sm:h-64 lg:h-auto lg:w-auto'
-        src={openhub} alt='Will Be back' width={350} height={350}/>
+        src={openhub} alt='openhub' width={350} height={350}/>
     </div>
   )
 }
