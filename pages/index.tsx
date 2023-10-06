@@ -28,12 +28,12 @@ export default function Home() {
       <Hero/>
       </section>
       {/* About */}
-      <section id='about' className='snap-center'>
+      <section id='about' className='snap-start'>
       <About/>  
       </section>
 
       {/* Courses */}
-      <section id='courses' className='snap-center'>
+      <section id='courses' className='snap-start'>
       <Courses/>
       </section>
 
@@ -53,13 +53,7 @@ export default function Home() {
       </section>
       
       <Link href='#hero'>
-      <footer className='sticky bottom-5 w-full cursor-pointer'>
-        <div className='flex items-center justify-center'>
-          <img className='h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer' 
-          src="https://media.tenor.com/IVCnKbtTeRQAAAAC/programming-computer.gif" 
-          alt="icon" />
-        </div>
-      </footer>
+      
       </Link>
     </div>
   )

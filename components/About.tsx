@@ -29,10 +29,10 @@ export default function About({}: Props) {
 
       <div className='text-white leading-relaxed my-4 text-xl font-medium text-left md:px-10 mb-20'>
         <p className='font-semibold'>
-          Hello! I'm a Computer Engineering student at The Chinese University of Hong Kong (CUHK). 
+        Hello! I&apos;m a Computer Engineering student at The Chinese University of Hong Kong (CUHK). 
           My academic journey has been deeply rooted in exploring the intricacies of computer systems and software. 
-          Over the years, I've been fortunate to immerse myself in various projects and internships, each offering a unique learning experience. 
-          As I continue my educational voyage, I'm eager to harness my passion and see the innovative avenues it leads me to in the world of computer engineering.
+          Over the years, I&apos;ve been fortunate to immerse myself in various projects and internships, each offering a unique learning experience. 
+          As I continue my educational voyage, I&apos;m eager to harness my passion and see the innovative avenues it leads me to in the world of computer engineering.
         </p>
       </div>
     </div>
