@@ -19,12 +19,12 @@ const ContactMe = (props: Props) => {
   };
 
   return (
-    <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-        <h3 className=' absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+    <div className='flex flex-col pt-20 pb-10 justify-center items-center max-w-7xl px-10 mx-auto mb-40'>
+        <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-2 w-full'>
         Contact 
         </h3>
 
-        <div className='absolute top-36 tracking-[3px] text-sm flex text-gray-500'>
+        <div className='flex top-36 tracking-[3px] text-sm flex text-gray-500 mb-10'>
             <EnvelopeIcon className='text-[#F7AB0A] h-7 animate-pulse'/>
             <p className=' text-xl'>kelvinwong159357@gmail.com</p>
         </div>

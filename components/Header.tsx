@@ -1,15 +1,13 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
-import Link from 'next/link'
 
 type Props = {}
 
 
 function Header({}: Props) {
   return (
-    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center '>
        <motion.div
         initial={{
           x:-500,
@@ -33,11 +31,6 @@ function Header({}: Props) {
             />
             <SocialIcon 
              url='https://www.linkedin.com/in/wai-chun-wong-a13242200/'
-             fgColor='gray'
-             bgColor='transparent'
-            />
-            <SocialIcon 
-             url='https://www.instagram.com/kwwc99/'
              fgColor='gray'
              bgColor='transparent'
             />

@@ -4,38 +4,56 @@ import { motion } from "framer-motion"
 type Props = {}
 
 const courseList = [
-        { id: 1, name: "Embedded System Design" },
-        { id: 2, name: "Digital Logic and Systems" },
-        { id: 3, name: "Discrete Mathematics and Algorithms" },
-        { id: 4, name: "Computer Organization and Design" },
-        { id: 5, name: "Software Engineering" },
-        { id: 6, name: "Data Structures" },
-        { id: 7, name: "Embedded Systems" }
+    { id: 1, name: "Embedded System Design", skills: ["C++", "Microcontroller", "Tiva", "Embedded C"] },
+    { id: 2, name: "Digital Logic and Systems", skills: ["Logic Gates", "Digital Circuits", "VHDL", "FPGA Design"] },
+    { id: 3, name: "Discrete Mathematics and Algorithms", skills: ["Graph Theory", "Combinatorics", "Recursion" ] },
+    { id: 4, name: "Computer Organization and Design", skills: ["Assembly Language", "CPU Architecture", "Memory Hierarchy", "Pipelining"] },
+    { id: 5, name: "Software Engineering", skills: ["Software Lifecycle", "Agile Methodology", "UML Diagrams", "Version Control"] },
+    { id: 6, name: "Data Structures", skills: ["Binary Trees", "Hash Tables", "Linked Lists", "Stacks and Queues", "Sorting Algorithms"] },
+    { id: 8, name: "Energy Efficient Computing", skills: ["GEMM", "Direct Conv", "Pruning", "Decomposition", "Winograd", "Quantization", "BNN", "Sparse Conv", "KD", "CUDA", "NAS", "TVM"] },
+    { id: 9, name: "Intro to Operating Systems", skills: ["Process Management","Memory Management","File Systems","Concurrency and Synchronization","Device Management","Security and Access Control","OS Kernel Design"] },
+    {id: 10, name: "Intro to Database Systems", skills: ["Database Design","SQL Queries","Normalization","Transaction Management", "Concurrency Control","Database Recovery","Relational Algebra"] }
+];
 
-    ]
+
+
 
 function Courses({}: Props) {
-  return (
-    <div className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 
-    justify-evenly mx-auto items-center">
-            <h3 className='flex top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
-             Courses
+    return (
+        <div className="flex flex-col pt-20 pb-10 justify-center items-center max-w-7xl px-10 mx-auto mb-32">
+            <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8 w-full mb-20'>
+                Courses
             </h3>
-            <ul className=' flex flex-col gap-20 font-serif text-center text-2xl items-center mx-auto text-gray-500'>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                 {courseList.map(course => (
-                    <motion.li className='border-gray-700 rounded-2xl'
+                    <motion.div 
                         key={course.id}
                         initial={{ opacity: 0, x: 200 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{once:true}}
                         transition={{ duration: 1 }}
+                        className="border p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                     >
-                        {course.name}
-                    </motion.li>
+                        <h4 className="text-xl font-bold mb-2">{course.name}</h4>
+                        <div className="flex flex-wrap">
+                            {course.skills.map(skill => (
+                                <span key={skill} className="text-sm bg-blue-500 text-white px-2 py-1 m-1 rounded-full">
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </motion.div>
                 ))}
-            </ul>
+            </div>
         </div>
-  )
+    )
 }
+
+
+
+
+
+
+      
 
 export default Courses

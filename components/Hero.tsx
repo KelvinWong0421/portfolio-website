@@ -11,7 +11,7 @@ function Hero({}: Props) {
     const[text,count] = useTypewriter({
         words:[
             "Howdy, I am Kelvin",
-            "CUHK Student",
+            "Studying In CUHK",
             "Cinephile"
         ],
         loop:true,
@@ -19,7 +19,7 @@ function Hero({}: Props) {
     });
 
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden mb-32'>
         <BackgroundCircles/>
         <Image className='relative rounded-full h-32 w-32 mx-auto object-cover'
         src={myImage} alt='page website' width={500} height={300}/>
