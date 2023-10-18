@@ -16,7 +16,10 @@ const skillList=[
     {id:10,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',dir:true},
     {id:11,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg',dir:true},
     {id:12,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',dir:true},
-  
+    {id:13,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg',dir:true},
+    {id:14,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',dir:true},
+    {id:15,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original-wordmark.svg',dir:true},
+    {id:16,url:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg',dir:true},
 ]
 
 
