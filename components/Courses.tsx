@@ -36,11 +36,15 @@ function Courses({}: Props) {
                     >
                         <h4 className="text-xl font-bold mb-2">{course.name}</h4>
                         <div className="flex flex-wrap">
-                            {course.skills.map(skill => (
-                                <span key={skill} className="text-sm bg-blue-500 text-white px-2 py-1 m-1 rounded-full">
-                                    {skill}
-                                </span>
-                            ))}
+                        {course.skills.map((skill, index) => (
+                            <span 
+                                key={`${course.id}-${index}`} 
+                                className="text-sm bg-teal-600 hover:bg-teal-700 transition-colors duration-300 font-medium text-white px-3 py-1 m-1 rounded-full cursor-pointer"
+                            >
+                                {skill}
+                            </span>
+                        ))}
+
                         </div>
                     </motion.div>
                 ))}
