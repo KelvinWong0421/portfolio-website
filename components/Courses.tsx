@@ -12,7 +12,8 @@ const courseList = [
     { id: 6, name: "Data Structures", skills: ["Binary Trees", "Hash Tables", "Linked Lists", "Stacks and Queues", "Sorting Algorithms"] },
     { id: 8, name: "Energy Efficient Computing", skills: ["GEMM", "Direct Conv", "Pruning", "Decomposition", "Winograd", "Quantization", "BNN", "Sparse Conv", "KD", "CUDA", "NAS", "TVM"] },
     { id: 9, name: "Intro to Operating Systems", skills: ["Process Management","Memory Management","File Systems","Concurrency and Synchronization","Device Management","Security and Access Control","OS Kernel Design"] },
-    {id: 10, name: "Intro to Database Systems", skills: ["Database Design","SQL Queries","Normalization","Transaction Management", "Concurrency Control","Database Recovery","Relational Algebra"] }
+    { id: 10, name: "Intro to Database Systems", skills: ["Database Design","SQL Queries","Normalization","Transaction Management", "Concurrency Control","Database Recovery","Relational Algebra"] },
+    { id: 11, name: "VLSI", skills: ["BDD","SAT","Two-Level Synthesis","Floorplanning", "Binary Decision Diagram","Placement"] }
 ];
 
 
