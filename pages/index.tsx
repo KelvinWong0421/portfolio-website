@@ -8,6 +8,7 @@ import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import ContactMe from '@/components/ContactMe'
 import Link from 'next/link'
+import Terminal from '@/components/Terminal'
 
 
 
@@ -20,7 +21,9 @@ export default function Home() {
       <Head>
         <title>Portfolio Website</title>
       </Head>
-      
+      {/* Terminal */}
+      <Terminal />
+
       {/* Header */}
       <Header />
       {/* Hero */}
