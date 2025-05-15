@@ -40,7 +40,7 @@ function Courses({}: Props) {
                         {course.skills.map((skill, index) => (
                             <span 
                                 key={`${course.id}-${index}`} 
-                                className="text-sm bg-teal-600 hover:bg-teal-700 transition-colors duration-300 font-medium text-white px-3 py-1 m-1 rounded-full cursor-pointer"
+                                className="text-sm bg-teal-600 hover:bg-teal-700 transition-colors duration-300 font-medium text-white px-3 py-1 m-1 rounded-full"
                             >
                                 {skill}
                             </span>

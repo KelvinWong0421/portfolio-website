@@ -24,7 +24,7 @@ export default function About({}: Props) {
         viewport={{ once: true }}
         className='flex-shrink-0 flex-wrap mb-10'
       >
-        <Image src={pic} className='mb-20 md:mb-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[400px]' alt="About Image"/>
+        <Image src={pic} className='mb-20 md:mb-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[400px] xl:h-[400px]' alt="About Image"/>
       </motion.div>
 
       <div className=' text-white leading-relaxed my-4 text-xl font-medium text-left md:px-10 mb-20 '>

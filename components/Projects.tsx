@@ -10,8 +10,17 @@ export default function Projects({}: Props) {
       <h3 className='uppercase tracking-[20px] text-gray-500 text-2xl text-center mb-8 w-full mb-20'>
         Projects
       </h3>
-      <Image className='relative mx-auto object-cover sm:w-64 sm:h-64 lg:h-auto lg:w-auto'
-        src={openhub} alt='openhub' width={350} height={350}/>
+      <div className='w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto'>
+        <Image 
+          src={openhub} 
+          alt='OpenHub Project'
+          width={350}
+          height={350}
+          layout="responsive"
+          objectFit="cover"
+          className='rounded-lg shadow-lg'
+        />
+      </div>
     </div>
   )
 }
