@@ -10,6 +10,7 @@ import ContactMe from '@/components/ContactMe'
 import Link from 'next/link'
 import Terminal from '@/components/Terminal'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 
 
@@ -34,6 +35,11 @@ export default function Home() {
       {/* About */}
       <section id='about' className='snap-start'>
       <About/>  
+      </section>
+
+      {/* Education */}
+      <section id='education' className='snap-start'>
+      <Education />
       </section>
 
       {/* Courses */}
